@@ -72,16 +72,6 @@ class ArticleCategoryController extends AdminController
                     $payload = "&nbsp;<strong>{$branch['title']}</strong>&nbsp;&nbsp;&nbsp;{$branch['description']}";
                 }
 
-//                if (!isset($branch['children'])) {
-//                    if (url()->isValidUrl($branch['uri'])) {
-//                        $uri = $branch['uri'];
-//                    } else {
-//                        $uri = admin_url($branch['uri']);
-//                    }
-
-//                    $payload .= "&nbsp;&nbsp;&nbsp;<a href=\"$uri\" class=\"dd-nodrag\">$uri</a>";
-//                }
-
                 return $payload;
             });
         });

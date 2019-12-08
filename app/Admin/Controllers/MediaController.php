@@ -27,7 +27,7 @@ class MediaController extends AdminController
         $grid = new Grid(new Media);
 
         $grid->column('id', __('Id'));
-        $grid->column('title', __('Title'));
+        $grid->column('title', '标题');
         $grid->column('filename', __('Filename'));
         $grid->column('format', __('Format'));
         $grid->column('description', __('Description'));

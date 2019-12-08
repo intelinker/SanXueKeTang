@@ -55,16 +55,16 @@ class ArticleController extends AdminController
         $show = new Show(Article::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('title', __('Title'));
-        $show->field('description', __('Description'));
-        $show->field('content', __('Content'));
-        $show->field('filepath', __('Filepath'));
-        $show->field('admin_user_id', __('Admin user id'));
-        $show->field('article_type_id', __('Article type id'));
-        $show->field('article_positions_id', __('Article positions id'));
-        $show->field('article_categories_id', __('Article categories id'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
+        $show->field('title', '标题');
+        $show->field('description', trans('description'));
+        $show->field('content', '内容');
+        $show->field('filepath', '文件路径');
+        $show->field('admin_user_id', '作者');
+//        $show->field('article_type_id', '文章类型');
+//        $show->field('article_positions_id', __('Article positions id'));
+        $show->field('article_categories_id', '分类');
+        $show->field('created_at', trans('created_at'));
+        $show->field('updated_at', trans('updated_at'));
 
         return $show;
     }

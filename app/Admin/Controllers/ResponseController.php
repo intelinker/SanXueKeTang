@@ -27,7 +27,7 @@ class ResponseController extends AdminController
         $grid = new Grid(new Response);
 
         $grid->column('id', __('Id'));
-        $grid->column('user_id', __('User id'));
+        $grid->column('user_id', '用户名');
         $grid->column('response_categories_id', __('Response categories id'));
         $grid->column('description', __('Description'));
         $grid->column('contact', __('Contact'));
